@@ -1,87 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="KH Trading — quality products and reliable service across Canada."
+      content="KH Trading is a Canadian pulse exporter supplying lentils, peas, chickpeas and other pulses to international markets."
     />
-    <title>KH Trading | khtrading.ca</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>KH Trading | Canadian Pulse Exporter</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://www.khtrading.ca/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KH Trading | Canadian Pulse Exporter" />
+    <meta
+      property="og:description"
+      content="Canadian pulses for global markets. Export-ready lentils, peas, chickpeas and more from Canada."
+    />
+    <meta property="og:url" content="https://www.khtrading.ca/" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:image" content="https://www.khtrading.ca/images/hero-prairie.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
-      <a class="logo" href="#">KH Trading</a>
-      <nav aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-inner">
+        <a class="logo" href="index.html">KH Trading</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero">
-        <p class="eyebrow">Canada</p>
-        <h1>Welcome to KH Trading</h1>
-        <p class="lead">
-          Your trusted partner for trading and supply. Tell your customers what
-          you do, what you sell, and how to reach you — this page is ready to
-          customize.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Contact us</a>
-          <a class="btn btn-ghost" href="#services">Our services</a>
+        <div class="container hero-grid">
+          <div>
+            <p class="hero-tagline">Canadian pulses for global markets.</p>
+            <h1>KH Trading</h1>
+            <p class="lead">
+              We export Canadian pulses — lentils, peas, chickpeas and related
+              crops — to international buyers who need reliable, export-ready
+              supply from one of the world’s leading pulse-producing regions.
+            </p>
+          </div>
+          <figure class="hero-image">
+            <!-- TODO: Replace images/hero-prairie.svg with a licensed or original photo -->
+            <img
+              src="images/hero-prairie.svg"
+              alt="Placeholder image — replace with Canadian prairie or pulse field photography"
+              width="800"
+              height="500"
+              loading="eager"
+            />
+            <figcaption>Photo placeholder — update in /images/</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <h2>About KH Trading</h2>
-        <p>
-          Add your company story here: years in business, markets you serve,
-          and what makes KH Trading different. This site runs on
-          <strong>khtrading.ca</strong> via GitHub Pages.
-        </p>
-      </section>
-
-      <section id="services" class="section cards">
-        <h2>What we offer</h2>
-        <ul class="card-grid">
-          <li class="card">
-            <h3>Trading</h3>
-            <p>Describe your import, export, or wholesale activities.</p>
-          </li>
-          <li class="card">
-            <h3>Products</h3>
-            <p>List categories, brands, or specialties you handle.</p>
-          </li>
-          <li class="card">
-            <h3>Support</h3>
-            <p>Quotes, logistics, and customer service details.</p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="contact" class="section contact">
-        <h2>Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:info@khtrading.ca">info@khtrading.ca</a>
-        </p>
-        <p class="contact-note">
-          Update this address once your GoDaddy email or Gmail is set up.
-        </p>
+      <section class="section section--alt" aria-labelledby="key-points-heading">
+        <div class="container">
+          <h2 id="key-points-heading" class="section-title visually-hidden">
+            Why work with us
+          </h2>
+          <ul class="key-points">
+            <li>
+              <h3>Sourced from Canada</h3>
+              <p>
+                Pulses grown and handled in Canada’s established agricultural
+                supply chains.
+              </p>
+            </li>
+            <li>
+              <h3>Export-ready supply</h3>
+              <p>
+                Focus on quality and consistency for shipments destined for
+                overseas markets.
+              </p>
+            </li>
+            <li>
+              <h3>Serving international markets</h3>
+              <p>
+                Working with buyers around the world who source Canadian lentils,
+                peas and chickpeas.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> KH Trading. khtrading.ca</p>
+      <div class="footer-inner">
+        <p class="footer-meta">
+          &copy; <span id="year"></span> KH Trading.
+          <a href="mailto:hifjur@khtrading.ca">hifjur@khtrading.ca</a>
+        </p>
+        <p class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>

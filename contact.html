@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact KH Trading — Canadian pulse exporter. Email, phone and office details."
+    />
+    <title>Contact | KH Trading — Canadian Pulse Exporter</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://www.khtrading.ca/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact KH Trading" />
+    <meta property="og:description" content="Get in touch with KH Trading." />
+    <meta property="og:url" content="https://www.khtrading.ca/contact.html" />
+    <meta property="og:locale" content="en_CA" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">KH Trading</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-header">
+        <div class="container container--narrow">
+          <h1>Contact</h1>
+          <p>Reach our team for general company inquiries.</p>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-details">
+            <h2 class="section-title">KH Trading</h2>
+            <dl>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:hifjur@khtrading.ca">hifjur@khtrading.ca</a>
+              </dd>
+
+              <dt>Phone / WhatsApp</dt>
+              <dd>[EDIT: +1 phone number with country code]</dd>
+
+              <dt>Address</dt>
+              <dd>
+                [EDIT: Street address]<br />
+                [EDIT: City, Province] [EDIT: Postal code]<br />
+                Canada
+              </dd>
+            </dl>
+          </div>
+
+          <div>
+            <!--
+              TODO: Configure form delivery — pick one:
+              1) Formspree: sign up at https://formspree.io, create a form, replace YOUR_FORM_ID below.
+              2) Netlify Forms: add netlify attribute and deploy on Netlify (see README).
+              Until configured, valid submissions open your email client (mailto fallback).
+            -->
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <p class="form-notice">
+                By sending a message, you agree to our
+                <a href="privacy.html">privacy policy</a>. If the form is not
+                yet connected to a service, your message will open in your email
+                app instead.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-meta">
+          &copy; <span id="year"></span> KH Trading.
+          <a href="mailto:hifjur@khtrading.ca">hifjur@khtrading.ca</a>
+        </p>
+        <p class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

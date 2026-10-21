@@ -1,0 +1,10 @@
+<!-- TODO: Replace with licensed photo  Canadian prairie / pulse fields -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Placeholder  Canadian prairie landscape</title>
+  <desc id="heroDesc">Temporary illustration until a real photo is added</desc>
+  <rect width="800" height="500" fill="#c8d4bc"/>
+  <rect y="280" width="800" height="220" fill="#8fa87a"/>
+  <ellipse cx="400" cy="120" rx="180" ry="70" fill="#f4e4bc" opacity="0.9"/>
+  <rect y="380" width="800" height="120" fill="#5c7352"/>
+  <text x="400" y="260" text-anchor="middle" fill="#1e4d3a" font-family="system-ui,sans-serif" font-size="22" font-weight="600">Replace: prairie / pulse field photo</text>
+</svg>
