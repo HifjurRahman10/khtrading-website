@@ -54,6 +54,43 @@ Repo **Settings → Pages**: branch `main`, folder `/ (root)`, custom domain `ww
 
 **GoDaddy DNS:** CNAME `www` → `HifjurRahman10.github.io` (not parking IPs).
 
+### Enable HTTPS (free — via GitHub, not GoDaddy SSL)
+
+You do **not** need to buy SSL from GoDaddy. GitHub issues the certificate once DNS is correct.
+
+1. Open [Pages settings](https://github.com/HifjurRahman10/khtrading-website/settings/pages).
+2. **Custom domain:** set **`www.khtrading.ca`** only. If **`khtrading.ca`** is listed and shows an error, remove it until apex DNS is set (or add apex **A** records below).
+3. Wait until the domain check is green, then turn on **Enforce HTTPS** (the checkbox stays grey until the certificate is ready — often 15 minutes to 24 hours after DNS fixes).
+4. Click **Check again** if it has been more than an hour.
+
+**GoDaddy DNS for `www` (required):**
+
+| Type  | Name | Value                    |
+|-------|------|--------------------------|
+| CNAME | www  | `HifjurRahman10.github.io` |
+
+**Optional — HTTPS on bare `khtrading.ca` (no www):** add four **A** records for **@**:
+
+| Type | Name | Value             |
+|------|------|-------------------|
+| A    | @    | `185.199.108.153` |
+| A    | @    | `185.199.109.153` |
+| A    | @    | `185.199.110.153` |
+| A    | @    | `185.199.111.153` |
+
+Then add **`khtrading.ca`** in GitHub Pages custom domain (alongside or instead of www — GitHub docs recommend one primary; many sites use www + forward apex).
+
+Remove GoDaddy **Website Builder**, **parking**, or purchased **SSL** on this domain if they intercept traffic — they block GitHub’s certificate.
+
+### Site looks blank?
+
+GitHub redirects `*.github.io/khtrading-website` to **www.khtrading.ca**. If **HTTPS** is not ready yet, browsers show a blank or certificate error page.
+
+1. Try **http://www.khtrading.ca** — content should load.
+2. In repo **Settings → Pages → Custom domain**, enter only **`www.khtrading.ca`** (remove bare `khtrading.ca` if it appears as an alternate until apex DNS is set).
+3. GoDaddy: **CNAME** `www` → `HifjurRahman10.github.io`; delete parking **A** records on `@`.
+4. Wait up to 24 hours, click **Check again**, then enable **Enforce HTTPS**.
+
 ### Other hosts
 
 Upload the entire folder to Netlify, Cloudflare Pages, or any static host. No build command required; publish directory is the project root.
