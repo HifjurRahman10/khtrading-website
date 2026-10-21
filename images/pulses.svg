@@ -1,9 +1,0 @@
-<!-- TODO: Replace with licensed photo  lentils, peas, chickpeas -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="pTitle">
-  <title id="pTitle">Placeholder  Canadian pulses</title>
-  <rect width="400" height="300" fill="#efeae2"/>
-  <circle cx="120" cy="150" r="45" fill="#c4692a"/>
-  <circle cx="200" cy="140" r="40" fill="#8b6914"/>
-  <circle cx="280" cy="160" r="42" fill="#d4a574"/>
-  <text x="200" y="250" text-anchor="middle" fill="#5a5a5a" font-family="system-ui,sans-serif" font-size="14">Pulses placeholder</text>
-</svg>

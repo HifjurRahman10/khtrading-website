@@ -66,29 +66,25 @@
               </dd>
 
               <dt>Phone / WhatsApp</dt>
-              <dd>[EDIT: +1 phone number with country code]</dd>
+              <dd>
+                <a href="tel:+14379076111">+1 437 907 6111</a>
+              </dd>
 
               <dt>Address</dt>
               <dd>
-                [EDIT: Street address]<br />
-                [EDIT: City, Province] [EDIT: Postal code]<br />
+                Toronto, ON<br />
                 Canada
               </dd>
             </dl>
           </div>
 
           <div>
-            <!--
-              TODO: Configure form delivery — pick one:
-              1) Formspree: sign up at https://formspree.io, create a form, replace YOUR_FORM_ID below.
-              2) Netlify Forms: add netlify attribute and deploy on Netlify (see README).
-              Until configured, valid submissions open your email client (mailto fallback).
-            -->
             <form
               id="contact-form"
               class="contact-form"
-              action="https://formspree.io/f/YOUR_FORM_ID"
+              action="mailto:hifjur@khtrading.ca"
               method="POST"
+              enctype="text/plain"
             >
               <div class="form-group">
                 <label for="name">Name</label>
@@ -117,9 +113,7 @@
               <button type="submit" class="btn btn-primary">Send message</button>
               <p class="form-notice">
                 By sending a message, you agree to our
-                <a href="privacy.html">privacy policy</a>. If the form is not
-                yet connected to a service, your message will open in your email
-                app instead.
+                <a href="privacy.html">privacy policy</a>.
               </p>
             </form>
           </div>

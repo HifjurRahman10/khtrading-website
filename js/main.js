@@ -18,10 +18,6 @@
   var form = document.getElementById("contact-form");
   if (!form) return;
 
-  var action = form.getAttribute("action") || "";
-  var formsConfigured =
-    action.indexOf("YOUR_FORM_ID") === -1 && action.indexOf("formspree.io") !== -1;
-
   form.addEventListener("submit", function (event) {
     clearErrors(form);
 
@@ -50,20 +46,18 @@
       return;
     }
 
-    if (!formsConfigured) {
-      event.preventDefault();
-      var subject = encodeURIComponent("Message from " + name.value.trim());
-      var body = encodeURIComponent(
-        "Name: " +
-          name.value.trim() +
-          "\nEmail: " +
-          email.value.trim() +
-          "\n\n" +
-          message.value.trim()
-      );
-      window.location.href =
-        "mailto:hifjur@khtrading.ca?subject=" + subject + "&body=" + body;
-    }
+    event.preventDefault();
+    var subject = encodeURIComponent("Message from " + name.value.trim());
+    var body = encodeURIComponent(
+      "Name: " +
+        name.value.trim() +
+        "\nEmail: " +
+        email.value.trim() +
+        "\n\n" +
+        message.value.trim()
+    );
+    window.location.href =
+      "mailto:hifjur@khtrading.ca?subject=" + subject + "&body=" + body;
   });
 
   function isValidEmail(value) {
